@@ -1,0 +1,44 @@
+body {
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.titulo {
+	color: #1c5fac;
+	margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+
+.filtro-container {
+	margin-bottom: 2em;
+}
+
+/*.fila-filtro {
+	margin-bottom: 1em;
+}*/
+
+.tabla {
+	overflow-x:auto;
+}
+
+
+.filtro-container .container .row {
+	margin-bottom: 1em;
+}
+
+@media (max-width: 543px) {
+
+	.filtro-container .container .row .label-xs{
+		margin-bottom: 1em;
+	}
+
+	.filtro-container .container .row {
+		margin-bottom: 0em;
+	}
+
+	.filtro-container .container .row button {
+		width: 100%;
+		margin-top: 1em;
+	}
+}
