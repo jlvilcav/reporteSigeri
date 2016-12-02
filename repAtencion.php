@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<title>Reporte Sunedu</title>	
+	<title>Reporte SIGERI</title>	
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap-flex.min.css" >
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" >
