@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "user_db_ost", "12345678", "ost");
+$mysqli = new mysqli("localhost", "root", "", "ost"); // user_db_ost 12345678
 
 /* comprobar la conexión */
 if ($mysqli->connect_errno) {
