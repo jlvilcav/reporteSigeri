@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "user_db_ost", "12345678", "ost");
+$mysqli = new mysqli("172.16.100.28", "user_db_ost", "OST235pass", "ost"); //OST235pass 12345678
 
 /* comprobar la conexión */
 if ($mysqli->connect_errno) {
@@ -29,4 +29,5 @@ if ($resultado = $mysqli->query("SELECT * FROM ost_staff LIMIT 10")) {
 }
 
 $mysqli->close();
+
 ?>
