@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,20 @@
    
 </head>
 <body>
+
+<?php
+//$query = mysqli_query("select * from ost_staff");
+$mysqli = new mysqli("localhost", "user_db_ost", "12345678", "ost"); //OST235pass 12345678
+
+/* comprobar la conexión */
+if ($mysqli->connect_errno) {
+    printf("Falló la conexión: %s\n", $mysqli->connect_error);
+    exit();
+}
+
+?>
+
+
 
 	<!-- Título -->
 	<header id="" class="titulo">
@@ -41,13 +56,53 @@
 					  	</div>				  	
 				</div>
 
+
+
+
+
+
 				<div class="row">				
 						<label for="" class="col-xs-3 col-sm-1 col-form-label">Agent:</label>
 						<div class="col-xs-9 col-sm-11">
 							<select name="select" class="form-control">
-							  <option value="value1">Value 1</option> 
+							  <option value="-1"> -- Todos -- </option> 
+
+								
+							<!--
 							  <option value="value2" selected>Value 2</option>
 							  <option value="value3">Value 3</option>
+							-->
+								<?php
+								if ($resultado = $mysqli->query("SELECT * FROM ost_staff LIMIT 10")) 
+								{
+
+									
+								    if (mysqli_num_rows($resultado) > 0) 
+								    {
+									    while ($line = mysqli_fetch_array($resultado, MYSQL_ASSOC)) 
+									    {
+									      
+									        
+									        echo('<option value="'.$line['staff_id'].'">'.utf8_encode($line['firstname'].' '.$line['lastname']).'</option>');
+
+
+
+									       
+
+											/*echo("<pre>line");
+									    	print_r($line);
+									    	echo("</pre>");
+									    	exit();
+											*/
+
+									       
+									    }
+									}
+								    $resultado->close();
+								}
+								?>
+
+
 							</select>
 						</div>
 				</div>

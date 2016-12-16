@@ -1,7 +1,7 @@
 <?php 
 define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASSWORD',''); 
+define('DB_USER','user_db_ost');
+define('DB_PASSWORD','OST235pass'); 
 define('DB_NAME','ost');
 /*define('DB_HOST','localhost');
 define('DB_USER','root');

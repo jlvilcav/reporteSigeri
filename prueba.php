@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("172.16.100.28", "user_db_ost", "OST235pass", "ost"); //OST235pass 12345678
+$mysqli = new mysqli("localhost", "user_db_ost", "12345678", "ost"); //OST235pass 12345678
 
 
 /* comprobar la conexión */
